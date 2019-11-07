@@ -1,0 +1,36 @@
+설치 
+ npm, npx, git, node, vsc
+
+React 
+ - javascript와 비슷한 점이 많음(function, class, variable..)
+ - browser에서 react 코드를 바로 해석 x
+    webpack + babel 설치 -> react로 컴파일..
+   >>
+  2019
+   - 명령을 사용해 React Web App  set up
+    >npx create-react-app      (in 작업 경로, react 프로젝트 생성 전)
+---------------------------------------
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+We suggest that you begin by typing:
+
+  cd C:\Users\allmi\Desktop\study\react_191107\movie_app
+  npm start
+---------------------------------------------
+
+ - git add
+ - create-react-app
+    : node-mon, 문서 수정 시 자동으로 웹 새로고침
+
+ - react는 웹 페이지의 요소를 javascript로 만들어 html에 밀어 넣음
+ - virtual DOM 사용(소스 코드에는 나오지 않음(web 콘솔)) .. 빠름
+ - 
+
+
+
+
+
