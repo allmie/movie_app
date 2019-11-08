@@ -24,11 +24,115 @@ We suggest that you begin by typing:
 
  - git add
  - create-react-app
-    : node-mon, 문서 수정 시 자동으로 웹 새로고침
+    : node-mon(Automatic re-running), 문서 수정 시 자동으로 웹 새로고침
 
  - react는 웹 페이지의 요소를 javascript로 만들어 html에 밀어 넣음
+   > index.html
+	> index.js
+		>app.js
+
  - virtual DOM 사용(소스 코드에는 나오지 않음(web 콘솔)) .. 빠름
- - 
+			f12.elements와 는 다름 
+   > 빈 html 로드 후 .js 에서 작성한 컴포넌트를 밀어 넣음
+
+  code
+    index.js
+	ReactDOM.render(<App />, document.getElementById('root'));
+			>component : show data, HTML 반환 - <" " /> (JSX 	- javascript + HTML, HTML in javascript (react component, react 유일 개념)
+	- react application은 하나의 component만 render 가능
+	- 단일 application( .js) 내에 여러 개의 component(<" " />) 삽입
+	 ex) 
+app.js
+function App() {
+    return (
+        <div>
+            <h3>hi</h3>
+            <Potato />
+        </div>
+    );
+}
+
+
+function Food(props){
+    console.log(props);
+    // Food componet의 property(props) 확인    (props가 아닌 임의의 변수면 가능)
+    return (
+        <div>
+            <h1>I like potato</h1>
+        </div>
+    );
+}
+>
+function Food({ fav }){
+    console.log(fav);
+    // Food componet의 property(props) 확인    (props가 아닌 임의의 변수면 가능)
+    // { fav } = props.fav
+    return (
+        <div>
+            <h1>I like {fav}</h1>
+        </div>
+    );
+}
+
+function App() {
+    return (
+        <div>
+            <h3>hi</h3>
+            <Food fav="chicken"/>
+            {/* Food component에 chicken(속성=props)을 전달 */}
+            <Food fav="tomato"/>
+            <Food fav="kimchi"/>
+            <Food fav="bob"/>
+            {/* component 재 사용 */}
+        </div>
+    );
+}
+
+
+동적 데이터 추가
+ - .map 사용
+	: array의 각 item에서 함수를 실행하는 array를 가지는 js 함수,
+	 function을 array의 각 item에 적용해서 array로 return
+ex)
+ const food = [1,2,3,4,5];
+ food.map(current => {
+		return current + "aa";
+		// <Food fav={current.name} />
+	}
+)
+
+ - react의 모든 element는 구분 필요
+<Food fav={current.name} />   
+>>
+<Food fav={current.name} key={current.id}/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
