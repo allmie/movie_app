@@ -15,3 +15,14 @@ React JS App create (2019)
    - .map
    - dynamic data use
 
+ 2 day
+# React
+ - class / function component
+ - state
+   - setState()
+ - life cycle method
+   - constructor()
+   - render()
+   - componentDidMount()
+   - componentDidUpdate()
+   - componentWillUnmount()
