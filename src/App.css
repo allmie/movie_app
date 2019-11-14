@@ -1,3 +1,14 @@
-/* .movies {
+body{
+    background-color: #EAEEF6;
+}
+li {
+    list-style-type: none;
+}
+.container {
+}
+.movies{
     display: flex;
-} */
+    margin-left: 60px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}

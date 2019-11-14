@@ -1,6 +1,63 @@
-/* img {
-    border: 3px black solid;
+/* .movie {
+    display: flex;
+    margin-right: 30px;
+    width: 400px;
+    height: 210px;
 }
-.movie {
-    margin-right: 2px;
+.movie img{
+    width: 150px;
+    height: 210px;
+}
+.movie__data {
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-top: 25px;
+}
+
+.movie__data .movie__title {
+    font-size: 15px;
 } */
+
+.movie {
+    width: 240px;
+    height: 130px;
+    display : flex;
+    padding-left: 10px;
+    background-color: #ffffff;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+.movie img {
+    width: 65px;
+    height: 100px;
+    /* position: absolute;
+    top: 50px; */
+    transform: translateY(-5px)
+}
+.movie__data {
+    font-size: 7px;
+    color: #93979b;
+    margin: 15px;
+}
+.movie .movie__data .movie__title {
+    font-size: 11px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.movie .movie__data .movie__year {
+    margin-bottom: 5px;
+}
+.movie .movie__data .genres {
+    display: flex;
+    margin-bottom: 5px;
+    width: 130px;
+    flex-wrap: wrap;
+}
+.genres .genres__genre {
+    margin-right: 5px;
+}
+.movie__data .movie__summary {
+    height: 30px;
+    overflow: hidden;
+}
