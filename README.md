@@ -26,3 +26,14 @@ React JS App create (2019)
    - componentDidMount()
    - componentDidUpdate()
    - componentWillUnmount()
+
+ 3 day
+# React
+ - axios(fetch)
+ - api-use
+
+ 4 day
+# React
+ - css
+ - HTML element use in JSX
+ - key
